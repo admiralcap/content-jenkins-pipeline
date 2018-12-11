@@ -1,17 +1,13 @@
 pipeline {
-
     agent any
-
     stages {
-    
         stage('build') {
-        
+
             steps {
-            
-                sh 'javac -d . src/*.java
-            
+
+                sh 'javac -d . src/*.java'
+
             }
-        
         }
     }
 
