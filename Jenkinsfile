@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
 
             steps {
-                echo "Hello Baby! in testbranch"
+                echo "Oh lord.. stuck in testbranch again."
                 sh 'javac -d . src/*.java'
                 sh 'echo Main-Class: Rectangulator > MANIFEST.MF'
                 sh 'jar -cvmf MANIFEST.MF rectangle.jar *.class'
