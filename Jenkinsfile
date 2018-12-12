@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
 
             steps {
-                echo "Hello Baby! In master."
+                echo "Master of puppets I'm pulling your strings.."
                 sh 'javac -d . src/*.java'
                 sh 'echo Main-Class: Rectangulator > MANIFEST.MF'
                 sh 'jar -cvmf MANIFEST.MF rectangle.jar *.class'
